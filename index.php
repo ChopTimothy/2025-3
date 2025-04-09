@@ -25,7 +25,7 @@ if (empty($_POST['name']) || !ctype_alpha($_POST['name']) || strlen($_POST['name
   $errors = TRUE;
 } 
 if (empty($_POST['phone']) || !is_numeric($_POST['phone']) || strlen($_POST['phone'])!=11){
-  print('Напишите Телефон <br/>');
+  print('Напишите Телефон (11 цифр) <br/>');
   $errors = TRUE;
 }
 if (empty($_POST['email']) || !preg_match('/@/', $_POST['email'])){

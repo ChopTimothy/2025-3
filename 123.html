@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="POST" id="form" class="w-50 mx-auto">
+
+        <label class="form-label">
+           ФИО:<br>
+          <input type="text" class="form-control" placeholder="Введите ваше ФИО" name="name" id = "name">
+        </label><br>
+
+        <label class="form-label">
+           Телефон:<br>
+          <input class="form-control" type="tel" placeholder="1234567890" name="phone" id="phone">
+        </label><br>
+
+        <label class="form-label">
+           e-mail:<br>
+          <input class="form-control" type="email" placeholder="Введите вашу почту" name="email" id="email">
+        </label><br>
+
+        <label class="form-label">
+           Дата рождения:<br>
+          <input class="form-control" value="2000-07-15" type="date" name="birthdate" id="birthdate">
+        </label><br>
+
+           Пол:<br>
+        <label class="form-check-label"><input type="radio" checked="checked" class="form-check-input" value="male" id="male" name="gender">
+          Мужской</label>
+        <label class="form-check-label"><input type="radio" class="form-check-input" value="female" id="female" name="gender">
+          Женский</label><br>
+
+        <label class="form-label">
+           Любимый язык программирования:<br>
+          <select class="form-select" id="languages" name="languages[]" multiple="multiple" required>
+            <option value="pascal">Pascal</option>
+            <option value="c" >C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskel">Haskel</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+          </select>
+        </label><br>
+
+        <label class="form-label">
+           Биография:<br>
+          <input type="text" class="form-control" id="bio" name="bio">
+        </label><br>
+
+          <br>
+        <label class="form-check-label"><input type="checkbox" class="form-check-input" name="contract_accepted" id="contract_accepted">
+          С чем-то ознакомлен</label><br>
+
+           Кнопка:<br>
+        <button type="submit" name="save" class="btn btn-primary">Сохранить</button>
+
+  </form>
+</body>
+</html>
